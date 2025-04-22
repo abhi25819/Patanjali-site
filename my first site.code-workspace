@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "C:/Users/abhin/OneDrive/Desktop/c programs"
+		},
+		{
+			"path": "C:/Users/abhin/OneDrive/Desktop/python programs"
+		},
+		{
+			"path": "../python/Done/Done"
+		},
+		{
+			"path": "C:/Users/abhin/OneDrive/Desktop/html programs"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdio.h": "c",
+			"structure program to compare two dates": "c"
+		}
+	}
+}
