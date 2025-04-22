@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+nav {
+  float: left;
+  width: 20%;
+  height: 900px; 
+  background-color:yellow;
+  padding: 30px;
+}
+
+article {
+  float: left;
+  padding: 30px;
+  width: 80%;
+  background-color: PINK;
+  height: 900px;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+ul{
+font-size:30PX;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  padding: 46px;
+  font-size: 25px;
+}
+
+li a:hover {
+  background-color: #e88542;
+}
+
+div.ROUNDED{
+  border: 5px solid BLACK;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  margin-right: 80px;
+  margin-left: 80px;
+  background-color: #e88542;
+  border-radius: 21px; 
+  padding: 22px;
+}
+
+#slider {
+  position: relative;
+  width: 100%;
+  height: 265px;
+ 
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+ 
+  float: left;
+}
+#slider ul li img{
+  width: 100%;
+  height: 265px;
+}
+ 
+#slider #prev, #slider #next {
+  width: 50%;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+#slider #prev:hover, #slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+
+.highlight:hover {
+  color:WHITE;
+  font-size: 90px;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAFf0;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <div class="navbar" class="sticky"><IMG SRC="logo-big.PNG">
+   </div>
+</header>
+
+
+<div class="navbar" class="sticky">
+   
+<ul><li><a href="Patanjali.html">HOME</a></li>
+    <li><a href="Natural Health Care.html">Natural Health Care & Food Products</a></li>    
+    <li><a href="Ayurvedic Medicines.html">Ayurvedic Medicines</a></li>
+    <li><a href="Herbal Home Care.html">Herbal & Home Care</a></li>
+	<li><a href="About.html">About Us</a></li>
+</ul>    
+</div>
+
+<CENTER>
+<div id="slider">
+    <ul id="slideWrap"> 
+      <li><img src="D:\patanjali site\WhatsApp Image 2023-10-22 at 4.50.38 PM" alt="image is not loading"></li>
+      <li><img src="12.jpg" alt="image is not loading"></li>
+      <li><img src="123.jpg" alt="image is not loading"></li>
+      <li><img src="1234.jpg" alt="image is not loading"></li>
+      <li><img src="12345.jpg" alt="image is not loading"></li>
+	  <li><img src="123456.jpg" alt="image is not loading"></li>
+	  <li><img src="1234567.jpg" alt="image is not loading"></li>
+      <li><img src="12345678.jpg" alt="image is not loading"></li>
+      <li><img src="123456789.jpg" alt="image is not loading"></li>
+	  <li><img src="1.JPG" alt="image is not loading"></li>
+      <li><img src="12.jpg" alt="image is not loading"></li>
+      <li><img src="123.jpg" alt="image is not loading"></li>
+      <li><img src="1234.jpg" alt="image is not loading"></li>
+      <li><img src="12345.jpg" alt="image is not loading"></li>
+	  <li><img src="123456.jpg" alt="image is not loading"></li>
+	  <li><img src="1234567.jpg" alt="image is not loading"></li>
+      <li><img src="12345678.jpg" alt="image is not loading"></li>
+      <li><img src="123456789.jpg" alt="image is not loading"></li>
+	  <li><img src="1.JPG" alt="image is not loading"></li>
+      <li><img src="12.jpg" alt="image is not loading"></li>
+      <li><img src="123.jpg" alt="image is not loading"></li>
+      <li><img src="1234.jpg" alt="image is not loading"></li>
+      <li><img src="12345.jpg" alt="image is not loading"></li>
+	  <li><img src="123456.jpg" alt="image is not loading"></li>
+	  <li><img src="1234567.jpg" alt="image is not loading"></li>
+      <li><img src="12345678.jpg" alt="image is not loading"></li>
+      <li><img src="123456789.jpg" alt="image is not loading"></li>
+	  <li><img src="1.JPG" alt="image is not loading"></li>
+      <li><img src="12.jpg" alt="image is not loading"></li>
+      <li><img src="123.jpg" alt="image is not loading"></li>
+      <li><img src="1234.jpg" alt="image is not loading"></li>
+      <li><img src="12345.jpg" alt="image is not loading"></li>
+	  <li><img src="123456.jpg" alt="image is not loading"></li>
+	  <li><img src="1234567.jpg" alt="image is not loading"></li>
+      <li><img src="12345678.jpg" alt="image is not loading"></li>
+      <li><img src="123456789.jpg" alt="image is not loading"></li>
+	  <li><img src="1.JPG" alt="image is not loading"></li>
+      <li><img src="12.jpg" alt="image is not loading"></li>
+      <li><img src="123.jpg" alt="image is not loading"></li>
+      <li><img src="1234.jpg" alt="image is not loading"></li>
+      <li><img src="12345.jpg" alt="image is not loading"></li>
+	  <li><img src="123456.jpg" alt="image is not loading"></li>
+	  <li><img src="1234567.jpg" alt="image is not loading"></li>
+      <li><img src="12345678.jpg" alt="image is not loading"></li>
+      <li><img src="123456789.jpg" alt="image is not loading"></li>
+	  <li><img src="1.JPG" alt="image is not loading"></li>
+      <li><img src="12.jpg" alt="image is not loading"></li>
+      <li><img src="123.jpg" alt="image is not loading"></li>
+      <li><img src="1234.jpg" alt="image is not loading"></li>
+      <li><img src="12345.jpg" alt="image is not loading"></li>
+	  <li><img src="123456.jpg" alt="image is not loading"></li>
+	  <li><img src="1234567.jpg" alt="image is not loading"></li>
+      <li><img src="12345678.jpg" alt="image is not loading"></li>
+      <li><img src="123456789.jpg" alt="image is not loading"></li>
+	  <li><img src="1.JPG" alt="image is not loading"></li>
+      <li><img src="12.jpg" alt="image is not loading"></li>
+      <li><img src="123.jpg" alt="image is not loading"></li>
+      <li><img src="1234.jpg" alt="image is not loading"></li>
+      <li><img src="12345.jpg" alt="image is not loading"></li>
+	  <li><img src="123456.jpg" alt="image is not loading"></li>
+	  <li><img src="1234567.jpg" alt="image is not loading"></li>
+      <li><img src="12345678.jpg" alt="image is not loading"></li>
+      <li><img src="123456789.jpg" alt="image is not loading"></li>
+	  <li><img src="1.JPG" alt="image is not loading"></li>
+      <li><img src="12.jpg" alt="image is not loading"></li>
+      <li><img src="123.jpg" alt="image is not loading"></li>
+      <li><img src="1234.jpg" alt="image is not loading"></li>
+      <li><img src="12345.jpg" alt="image is not loading"></li>
+	  <li><img src="123456.jpg" alt="image is not loading"></li>
+	  <li><img src="1234567.jpg" alt="image is not loading"></li>
+      <li><img src="12345678.jpg" alt="image is not loading"></li>
+      <li><img src="123456789.jpg" alt="image is not loading"></li>
+	  <li><img src="1.JPG" alt="image is not loading"></li>
+      <li><img src="12.jpg" alt="image is not loading"></li>
+      <li><img src="123.jpg" alt="image is not loading"></li>
+      <li><img src="1234.jpg" alt="image is not loading"></li>
+      <li><img src="12345.jpg" alt="image is not loading"></li>
+	  <li><img src="123456.jpg" alt="image is not loading"></li>
+	  <li><img src="1234567.jpg" alt="image is not loading"></li>
+      <li><img src="12345678.jpg" alt="image is not loading"></li>
+      <li><img src="123456789.jpg" alt="image is not loading"></li>
+    </ul>
+    <a id="prev" href="#">&#8810;</a>
+    <a id="next" href="#">&#8811;</a>
+  </div>
+  
+<div class="ROUNDED">
+<div style="color:brown; text-align:center; font-size:35px"><h1>All Categories Health Cares & Food Products</h1><br>
+<a href="Natural Health Care.html">
+<button class="button" style="vertical-align:middle; width:200px; font-size:30px"><span>Click Here to Get Swadeshi Samridhi Card </span></button></a>
+ </div>
+</DIV>  
+<img src="Ayurvedic_Medicine.jpg" width="100%" HEIGHT="500px"> 
+
+
+  <script>
+    var responsiveSlider = function() {
+
+var slider = document.getElementById("slider");
+var sliderWidth = slider.offsetWidth;
+var slideList = document.getElementById("slideWrap");
+var count = 1;
+var items = slideList.querySelectorAll("li").length;
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+
+window.addEventListener('resize', function() {
+  sliderWidth = slider.offsetWidth;
+});
+
+var prevSlide = function() {
+  if(count > 1) {
+    count = count - 2;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count = 1) {
+    count = items - 1;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+};
+
+var nextSlide = function() {
+  if(count < items) {
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count = items) {
+    slideList.style.left = "0px";
+    count = 1;
+  }
+};
+
+next.addEventListener("click", function() {
+  nextSlide();
+});
+
+prev.addEventListener("click", function() {
+  prevSlide();
+});
+
+setInterval(function() {
+  nextSlide()
+}, 5000);
+
+};
+
+window.onload = function() {
+responsiveSlider();  
+}
+
+
+</script>
+</CENTER>
+ 
+<CENTER>
+<div style="font-size:30px;" class="ROUNDED">
+<h1 class="highlight" style="font-size:80px;">CONSULTANT FROM AYURVEDA</h1>
+<P  class="highlight">Ayurvedic consultation from specialist ayurvedic doctors via phone or video consultation for 100+ diseases with best Ayurvedic Consultants.</P>
+<DIV CLASS="BOOKING">
+<form>
+    <input type="text" placeholder="Your Full Name...">
+    <input type="text" placeholder="Phone Number...">
+	<select>
+<option>Select Disease</option>
+<option>Allergies</option>
+<option>Colds and Flu</option>
+<option>Conjunctivitis ("pink eye“)</option>
+<option>Diarrhea</option>
+<option>Headaches</option>
+<option>Mononucleosis</option>
+<option>Stomach Aches</option>
+<option>HIV/AIDS</option>
+<option>Infectious mononucleosis</option>
+<option>Influenza (flu)</option>
+<option>Premature Ejaculation</option>
+</select>
+
+<select>
+<option>Select Your State</option>
+<option>Andhra Pradesh</option>
+<option>Arunachal</option>
+<option>Assam</option>
+<option>Bihar</option>
+<option>Chhatisgarh</option>
+<option>Goa</option>
+<option>Gujrat</option>
+<option>Hariyana</option>
+<option>Himanchal Pradesh</option>
+<option>Jammu & Kashmir</option>
+<option>Jharkhand</option>
+<option>Karnataka</option>
+<option>Kerela</option>
+<option>Madhya Pradesh</option>
+<option>Maharashtra</option>
+<option>Manipur</option>
+<option>Meghalaya</option>
+<option>Mizoram</option>
+<option>Nagaland</option>
+<option>Odisha</option>
+<option>Sikkim</option>
+<option>Tamil Nadu</option>
+<option>Telangana</option>
+<option>Tripura</option>
+<option>Uttar Pradesh</option>
+<option>Uttarakhand</option>
+<option>West Bengal</option>
+</select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</DIV></div>
+<BR>
+<IMG SRC="Book_Publication.JPG" WIDTH="100%" height="400PX">
+<BR>
+<table width="100%" height="500px">
+<tr>
+<td>
+<div class="ROUNDED">
+<img SRC="amla.jpg" height="550" width="550"><br>
+<h1>AMLA JUICE</h1>
+<h1>Rs. 249</h1>
+</DIV>
+</td>
+
+<td>
+<div class="ROUNDED">
+<img SRC="badam.png" height="550" width="550"><br>
+<h1>BADAM</h1>
+<h1>Rs. 499</h1>
+</DIV>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<div class="ROUNDED">
+<img SRC="chya.jpg" height="550" width="550"><br>
+<h1>CHYAWANPRASH</h1>
+<h1>Rs. 399</h1>
+</DIV>
+</td>
+
+<td>
+<div class="ROUNDED">
+<img SRC="cow.jpg" height="550" width="550"><br>
+<h1>COW'S GHEE</h1>
+<h1>Rs. 999</h1>
+</DIV>
+</td>
+</TR>
+
+<TR>
+<td>
+<div class="ROUNDED">
+<img SRC="harad.png" height="550" width="550"><br>
+<h1>HALDI</h1>
+<h1>Rs. 399</h1>
+</DIV>
+</td>
+
+<td>
+<div class="ROUNDED">
+<img SRC="honey.jpg" height="550" width="550"><br>
+<h1>DESI HONEY</h1>
+<h1>Rs. 599</h1>
+</DIV>
+</td>
+</TR>
+
+<TR>
+<td>
+<div class="ROUNDED">
+<img SRC="juice.jpg" height="550" width="550"><br>
+<h1> GILOY JUICE</h1>
+<h1>Rs. 899</h1>
+</DIV>
+</td>
+
+<td>
+<div class="ROUNDED">
+<img SRC="kesar.jpg" height="550" width="550"><br>
+<h1>KESAR</h1>
+<h1>Rs. 399</h1>
+</DIV>
+</td></TR>
+
+<TR>
+<td>
+<div class="ROUNDED">
+<img SRC="marmura.jpg" height="550" width="550"><br>
+<h1>MURMURA</h1>
+<h1>Rs. 9999</h1>
+</DIV>
+</td>
+
+<td>
+<div class="ROUNDED">
+<img SRC="rasayan.jpg" height="550" width="550"><br>
+<h1>RASAYAN</h1>
+<h1>Rs. 99</h1>
+</DIV>
+</td>
+</tr>
+</table>
+
+<footer style="background-color:#000000; font-size:30px; COLOR:WHITE; PADDING:120PX;">
+<table style="width: 100%;">
+  <tr>
+    <th>INFORMATION</th>
+    <th>CATEGORIES</th>
+	<th>GET IN TOUCH</th>
+  </tr><HR><BR><BR>
+<DIV STYLE="FONT-SIZE:20PX;">
+  <tr>
+<td>ABOUT US</td><td>NATURAL HEALTH CARE</td><td>Email: customercare@orderme.co.in</td></TR>
+
+<tr>
+<td>GENERAL TERMS & CONDITIONS</td><td>NATURAL FOOD PRODUCTS</td><td>Patanjali Ayurved Limited,</td>
+</tr>
+
+<tr><td>SHIPPING POLICY</td><td>AYURVEDIC MEDICINE</td>
+<td>Haridwar, Uttarakhand - 249401</td></tr>
+
+<tr>
+<td>CANCELLATION POLICY</td><td>HERBAL HOME CARE</td>
+<td>Helpline number – 1860-1800-180 & 01334-610111</td></tr>
+
+<tr>
+<td>RETURN/REFUND POLICY</td><td>NATURAL PERSONAL CARE</td>
+<td> (Monday to Saturday 6 am to 10 pm)</td></tr>
+
+<tr>
+<td>PRIVACY POLICY</td><td>PATANJALI PUBLICATION</td>
+<td>Have a Question?</td></tr>
+
+<tr>
+<td>FAQ<BR>
+MEDIA<BR>
+SITE MAP<BR>
+CAUTION NOTICE</td>
+<td>
+SAMRIDHI CARD<BR>
+NUTRACEUTICALS<BR>
+PARIDHAN<BR>
+COPPERWARE</td>
+<td></td></tr>
+</table><HR>
+</footer> 
+</body>
+</html>
